@@ -9,7 +9,7 @@ import plotly.express as px
 
 # Charger les données uniquement si elles ne sont pas encore présentes dans la session
 if 'df' not in st.session_state:
-    st.session_state.df = pd.read_csv("/Users/anne-sixtine/Documents/DataScientest/5_LFB_fusion.csv")
+    st.session_state.df = pd.read_csv("data/5_LFB_fusion.csv")
 
 # Accéder aux données depuis session_state
 df = st.session_state.df
