@@ -87,22 +87,53 @@ elif page == "Distribution":
         st.dataframe(count_data)
 
 
-elif page == "Enrichissement":
-    st.header("Enrichissement")
-    st.markdown("Nous avons fait le choix de rajouter des *variables internes* en segmentant la date de référence : **en mois, jour de la semaine, année**)  et des *variables externes* issues de la base **météo** pour la même période.")
-    
-# Création de trois onglets
-    tab1, tab2 = st.tabs(["Variables temporelles", "Variables météo"])
+elif page == "Enrichissement" : 
+    st.markdown("<h1 style='text-align: center;'>Enrichissement des données</h1>", unsafe_allow_html=True)
+    st.image("Lfb_logo.jpg", width=100)
+    col1, col2, col3 = st.columns(3)
+    with col1 :
+        st.write("Pour faciliter la pertinence de la datavisualisation, nous avons segmenté la date complète avec de nouvelles variables.\n\n"
+         "🕒   Ajout de variables temporelles :\n\n"
+                 "- **Hour**\n\n"
+                 "- **Weekday**\n\n"
+                 "- **Month**\n\n")
+       
 
-# Contenu du premier onglet
-    with tab1:
-        st.header("Variables temporelles")
-        st.write("Pour faciliter la pertinence de la datavisualisation, nous avons segementer la date complète avec de nouvelles variables")
+    with col2 :   
+         st.write("")
+         st.write("")
+         st.write("")
+         st.write("")
+         st.write("")
+         st.write("")
+        
+         st.write("")
+         st.write("Nous avons récupéré des données météorologiques pour la période qui nous concerne (2009-2024) depuis une source de données mise en accès libre (fichiers excel de l'historique jour par jour de la météo sur Londres).\n\n"
+                 "☀️  Nouvelles variables météorologiques :\n\n"
+                 "- **Meteo**\n\n"
+                 "- **Visibility**\n\n")
+        
+    with col3:
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("📍 Dernier ajout : une variable géographique qui permet d'identifier si l'arrondissement est du centre de Londres ou en périphérie\n\n"
+                 "- **Inner_outer**")
+        st.write("")
+        st.image("Inner_Outer.png", width = 400)
 
-# Contenu du deuxième onglet
-    with tab2:
-        st.header("Variables Météo")
-        st.write("Voici quelques visualisations ou analyses.")
 
 
 elif page == "Datavisualisation":
