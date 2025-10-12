@@ -7,13 +7,21 @@ import plotly.express as px
 
 
 
-# Charger les données uniquement si elles ne sont pas encore présentes dans la session
+csv_url = "https://media.githubusercontent.com/media/premapouce/streamlit-app/refs/heads/main/data/5_LFB_fusion_sample.csv"
+
 if 'df' not in st.session_state:
-    st.session_state.df = pd.read_csv("data/5_LFB_fusion.csv")
+    try:
+        st.session_state.df = pd.read_csv(csv_url)
+    except Exception as e:
+        st.error(f"Erreur lors du chargement des données : {e}")
+        st.session_state.df = None
 
-# Accéder aux données depuis session_state
-df = st.session_state.df
-
+# Utiliser le dataframe seulement s'il est bien chargé
+if st.session_state.df is not None:
+    df = st.session_state.df
+    # Ton code ici avec df (ex: affichage, visualisation...)
+else:
+    st.warning("Les données ne sont pas disponibles.")
 
 
 @st.cache_data
