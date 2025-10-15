@@ -43,13 +43,6 @@ pages = ["Introduction", "Métadonnées", "Exploration", "Enrichissement", "Data
 page = st.sidebar.radio("Aller vers", pages)
 
 
-st.sidebar.write("Etude faite par :"
-"- Anne-Sixtine Lerebours "
-"- Léa V.\n\n"
-"- Alix L.\n\n"
-"- Célia T.")
-
-
 # Affichage de l'image principale
 st.image("Lfb_logo.jpg", width=75)
 
