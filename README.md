@@ -71,7 +71,7 @@ L’objectif est d’analyser **14 ans de données d’interventions des sapeurs
 
 ## 📎 Liens utiles
 - 🌐 **Application Streamlit** : [https://lfb-data-app.streamlit.app](https://lfb-data-app.streamlit.app)  
-- 💻 **GitHub du projet** : [https://github.com/premapouce](https://github.com/premapouce)
+- 💻 **GitHub du projet** : [https://github.com/premapouce/streamlit-app](https://github.com/premapouce/streamlit-app)
 
 ---
 
