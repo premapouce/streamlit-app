@@ -43,11 +43,10 @@ pages = ["Introduction", "Métadonnées", "Exploration", "Enrichissement", "Data
 page = st.sidebar.radio("Aller vers", pages)
 
 
- HEAD cd504c4 (Supprimer LFS et réintégrer les images normales)
 # Affichage de l'image principale
 st.image("Lfb_logo.jpg", width=75)
 
-# === PAGE : INTRODUCTION ===
+# 
 if page == "Introduction":
     st.markdown(
         "<h1 style='text-align:center; color:#B22222;'>⏱️ Temps de réponse des pompiers de Londres</h1>", 
@@ -643,7 +642,7 @@ elif page == "Preprocessing":
         
          
 
-# === Page - Modélisation ===
+#Page - Modélisation
 elif page == "Modélisation":
     st.markdown(
     "<h1 style='text-align: center; color:#B22222;'>Modélisation</h1>",
@@ -1305,7 +1304,7 @@ elif page == "Modélisation":
 
     
 
-# === Page - Conclusion ===    
+# Page - Conclusion    
 
 
 elif page == "Conclusion":
