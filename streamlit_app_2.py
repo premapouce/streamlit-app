@@ -43,6 +43,7 @@ pages = ["Introduction", "Métadonnées", "Exploration", "Enrichissement", "Data
 page = st.sidebar.radio("Aller vers", pages)
 
 
+ HEAD cd504c4 (Supprimer LFS et réintégrer les images normales)
 # Affichage de l'image principale
 st.image("Lfb_logo.jpg", width=75)
 
