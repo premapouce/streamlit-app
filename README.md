@@ -1,7 +1,7 @@
 # 🚒 Projet Data Mining & Machine Learning — Interventions des Pompiers
 
 ## 🧭 Contexte du projet
-Ce projet s’inscrit dans le cadre de la formation **Data Scientist (DataScientest)**.  
+Ce projet s’inscrit dans le cadre de la formation **Data Analyst (DataScientest)**.  
 L’objectif est d’analyser **14 ans de données d’interventions des sapeurs-pompiers** afin de :
 - comprendre les **tendances spatio-temporelles des interventions**,
 - identifier les **facteurs influençant les délais de réponse**,
