@@ -5,3 +5,4 @@ scikit-learn
 seaborn>=0.13.2
 matplotlib
 pillow
+plotly
