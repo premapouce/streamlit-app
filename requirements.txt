@@ -6,4 +6,3 @@ seaborn>=0.13.2
 matplotlib
 pillow
 plotly>=5.20.0
-import os
